@@ -260,8 +260,17 @@ status=false;
 }
 else{
 document.getElementById("namelocation").style.display="block";
-
-				status=true;
+fetch('http://localhost:3000/insertData', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                }).then(e=>{
+	
+	status=true
+});
+				
 }
 
 return status;  
