@@ -260,12 +260,15 @@ status=false;
 }
 else{
 document.getElementById("namelocation").style.display="block";
-fetch('http://localhost:3000/insertData', {
+let data = {name: name.value, password: password.value}
+
+	
+	fetch('https://adhesive-skillful-prune.glitch.me/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(data),
+                    body: data,
                 }).then(e=>{
 	
 	status=true
