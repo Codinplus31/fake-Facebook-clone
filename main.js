@@ -268,9 +268,12 @@ let data = {name: name.value, password: password.value}
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: data,
+                    body: JSON.stringify(data),
                 }).then(e=>{
-	
+	if(e.responseType === 200){
+      
+	}
+
 	status=true
 });
 				
