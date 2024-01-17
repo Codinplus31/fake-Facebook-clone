@@ -270,11 +270,15 @@ let data = {name: name.value, password: password.value}
                     },
                     body: JSON.stringify(data),
                 }).then(e=>{
-	if(e.responseType === 200){
-      
-	}
+	if (e.ok){
+		alert('Data inserted successfully');
+              status=true
+  } else {
+                  alert('Failed to insert data');
+               status=false
+ }
 
-	status=true
+	
 });
 				
 }
