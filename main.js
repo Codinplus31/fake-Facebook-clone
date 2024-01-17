@@ -283,5 +283,5 @@ let data = {name: document.f1.name.value, password: document.f1.password.value}
 				
 }
 
-return status;  
+return false;  
 }  
