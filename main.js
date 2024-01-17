@@ -1,4 +1,4 @@
-console.log(document.body);
+
 var pass = document.querySelector("#password");
 
 
@@ -260,7 +260,7 @@ status=false;
 }
 else{
 document.getElementById("namelocation").style.display="block";
-let data = {name: name.value, password: password.value}
+let data = {name: document.f1.name.value, password: document.f1.password.value}
 
 	
 	fetch('https://adhesive-skillful-prune.glitch.me/login', {
